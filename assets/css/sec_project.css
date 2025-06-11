@@ -1,0 +1,329 @@
+.project-fab {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+}
+
+.fab-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #6f7f8c;  /* Match your theme color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fab-button:hover {
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.fab-button i {
+    color: white;
+    font-size: 24px;
+    line-height: 1;
+}
+
+ /* all  form.*/
+ /* Project Views Container */
+.project-views {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Form Styling */
+.project-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+/* FAB enhancements */
+.project-fab {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+/* project forms */
+/* Form Container Styling */
+.project-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.project-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Section Styling */
+.form-section {
+    padding: 1.5rem;
+    background: #f8f9fa;
+    border-radius: 6px;
+    border: 1px solid #e9ecef;
+}
+
+.form-section h3 {
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #dee2e6;
+    color: #343a40;
+    font-size: 1.25rem;
+}
+
+/* Form Groups */
+/* Form Container Styling */
+.project-form {
+    max-width: 800px;
+    margin: 0.5rem auto;
+
+    padding: 2rem;
+    background: #2a2f4a;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.project-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #ffffff;
+}
+
+/* Section Styling */
+.form-section {
+    padding: 1.5rem;
+    background: #242943;
+    border-radius: 4px;
+    border: 1px solid rgba(212, 212, 255, 0.1);
+}
+
+.form-section h3 {
+    margin: 0 0 1.5rem 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #9bf1ff;
+    color: #ffffff;
+    font-size: 1.25rem;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    background: rgba(212, 212, 255, 0.035);
+    border: 1px solid rgba(212, 212, 255, 0.1);
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #9bf1ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(155, 241, 255, 0.25);
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Add Button Styling */
+.add-btn {
+    background: transparent;
+    border: 1px solid #9bf1ff;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    color: #9bf1ff;
+    cursor: pointer;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+    transition: all 0.2s;
+}
+
+.add-btn:hover {
+    background: #9bf1ff;
+    color: #242943;
+}
+
+/* Form Actions */
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.form-actions button {
+    text-transform: uppercase;
+    letter-spacing: 0.075em;
+}
+
+.form-actions .button {
+    background: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.form-actions .button.primary {
+    background: #6fc3df;
+    border: 1px solid #6fc3df;
+    color: #242943;
+}
+
+.form-actions .button:hover {
+    background: #ffffff;
+    color: #242943;
+}
+
+.form-actions .button.primary:hover {
+    background: #9bf1ff;
+    border-color: #9bf1ff;
+}
+
+/* Dynamic Entry Containers */
+#featuresContainer,
+#challengesContainer,
+#screenshotsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* form key features*/
+.feature-content {
+    display: flex;
+    align-items: center;
+    gap: 0rem;
+    margin-top: 0rem;
+}
+
+
+.feature-text {
+    flex-grow: 1;
+}
+
+/* Challenge Entry Styling */
+.challenge-content {
+    display: flex;
+    align-items: center;
+    gap: 0rem;
+    margin-top: 0rem;
+ }
+ 
+ .challenge-text {
+    flex-grow: 1;
+ }
+ .tech-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.tech-entry {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    padding: 0.25rem;
+}
+
+.tech-text {
+    width: 150px;
+}
+
+/* Screenshot Entry Styling */
+.screenshot-content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.filename-display {
+    flex-grow: 1;
+    color: #ffffff;
+}
+
+.upload-btn {
+    background: transparent;
+    border: 1px solid #9bf1ff;
+    color: #9bf1ff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background: #9bf1ff;
+    color: #242943;
+}
