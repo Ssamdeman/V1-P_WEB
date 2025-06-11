@@ -1,0 +1,204 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Forty by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="stylesheet" href="assets/css/sec_project.css" />
+        <script type="module" src="assets/js/sec_project.js"></script>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<a href="index.html" class="logo"><strong>Damon</strong> <span></span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="index.html">Home</a></li>
+							<li><a href="landing.html">Landing</a></li>
+							<li><a href="generic.html">Generic</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+						<ul class="actions stacked">
+							<li><a href="#" class="button primary fit">Get Started</a></li>
+							<li><a href="#" class="button fit">Log In</a></li>
+						</ul>
+					</nav>
+
+				<!-- Banner -->
+					<section id="banner" class="major">
+						<div class="inner">
+							<header class="major">
+								<h1>Secruity Project</h1>
+							</header>
+						</div>
+					</section>
+
+
+			</div>
+
+            <!-- Project Action Button -->
+            <div class="project-fab">
+                <button class="fab-button" id="addProjectBtn">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            
+            <!-- Project Views Container -->
+            <div class="project-views">
+                <!-- Grid View - Default -->
+                <div id="projectGridView" class="project-grid">
+                    <!-- Projects will be dynamically inserted here -->
+                </div>
+
+                <!-- Form View - Shows when mode=new -->
+                <div id="projectFormView" class="project-form" style="display: none;">
+                    <form id="newProjectForm" class="project-form-container">
+                        
+                        <!-- Basic Information Section -->
+                        <div class="form-section">
+                            <h3>Basic Information</h3>
+                            <div class="form-group">
+                                <label for="projectTitle">Title</label>
+                                <input type="text" id="projectTitle" name="projectTitle" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="projectBrief">Brief Description</label>
+                                <textarea id="projectBrief" name="projectBrief" required></textarea>
+                            </div>
+                        </div>
+                
+
+
+
+
+                        <!-- Features Section -->
+                        <div class="form-section">
+                            <h3>Features</h3>
+                            <button type="button" class="add-btn" id="addFeatureBtn">+ Add</button>
+                            <div id="featuresContainer">
+                            </div>
+                            <!-- Add this template -->
+                            <template id="featureTemplate">
+                                <div class="feature-entry">
+                                    <div class="form-group">
+                                        <div class="feature-content">
+                                            <input type="text" class="feature-text" placeholder="Enter feature description">
+                                            <button type="button" class="remove-btn">×</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                        
+                
+
+
+
+
+                        <!-- Technical Challenges Section -->
+                        <div class="form-section">
+                            <h3>Technical Challenges</h3>
+                            <button type="button" class="add-btn" id="addChallengeBtn">+ Add Challenge</button>
+                            <div id="challengesContainer">
+                                <!-- Dynamic challenge entries will be added here -->
+                            </div>
+                        </div>
+                
+
+                        
+                        <!-- Project Links Section -->
+                        <div class="form-section">
+                            <h3>Project Links</h3>
+                            <div class="form-group">
+                                <label for="demoUrl">Demo URL</label>
+                                <input type="url" id="demoUrl" name="demoUrl">
+                            </div>
+                            <div class="form-group">
+                                <label for="githubUrl">GitHub Repository URL</label>
+                                <input type="url" id="githubUrl" name="githubUrl">
+                            </div>
+                        </div>
+
+                        <!-- Technologies Section -->
+                        <div class="form-section">
+                            <h3>Technologies Used</h3>
+                            
+                            <!-- Frontend Section -->
+                            <div class="form-group">
+                                <label>Frontend</label>
+                                <div id="frontendTechContainer" class="tech-container">
+                                    <button type="button" class="add-btn" id="addFrontendTech">+ </button>
+                                </div>
+                            </div>
+
+                            <!-- Backend Section -->
+                            <div class="form-group">
+                                <label>Backend</label>
+                                <div id="backendTechContainer" class="tech-container">
+                                    <button type="button" class="add-btn" id="addBackendTech">+</button>
+                                </div>
+                            </div>
+
+                            <!-- Deployment Section -->
+                            <div class="form-group">
+                                <label>Deployment</label>
+                                <div id="deploymentTechContainer" class="tech-container">
+                                    <button type="button" class="add-btn" id="addDeploymentTech">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                
+                        <!-- Screenshots Section -->
+                        <div class="form-section">
+                            <h3>Screenshots</h3>
+                            <button type="button" class="add-btn" id="addScreenshotBtn">+</button>
+                            <div id="screenshotsContainer">
+                                <!-- Dynamic screenshot entries will be added here -->
+                            </div>
+                        </div>
+                
+                        <!-- Form Actions -->
+                        <div class="form-actions">
+                            <button type="button" class="button" id="cancelProject">Cancel</button>
+                            <button type="submit" class="button primary">Save</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+
+            <!-- The firebase -->
+            <!-- Remove previous Firebase scripts and use these -->
+            <script type="module">
+                import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js'
+                import { getFirestore } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js'
+                import { getAnalytics } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js'
+            </script>
+            <script type="module" src="assets/js/firebase-config.js"></script>
+
+	</body>
+</html>
